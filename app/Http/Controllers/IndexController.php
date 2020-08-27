@@ -24,7 +24,8 @@ class IndexController extends Controller
     public function index()
     {
         return response()->json([
-            'author' => 'cronycles'
+            'author' => 'cronycles',
+            'version' => config('app.version')
         ]);
     }
 }
