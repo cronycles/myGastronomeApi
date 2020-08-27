@@ -81,17 +81,7 @@ npm run build-mayor
 Tutto il deploy lo fará solo grazie al file che avete in questo progetto chiamato **.cpanel.yml**
 
 ### Prima volta che fate il deploy a Production?
-Se é la prima volta, allora dovete prima assicurarvi, nella route del progetto, di avere le seguienti cose giá messe a mano:
+Se é la prima volta, allora dovete prima assicurarvi, nella route del progetto, di avere le seguenti cose giá messe a mano:
 * la cartella __/storage__
 * il file __.env.production__ che avrete rinominato in __.env__
-* la cartella del vostro cdn
 * ovviamente la BBDD funzionante
-
-## CDN
-Per comoditá le immagini del progetto uploaded e gli eventuali files sono stati messi in un subdominio chiamato **cdn.hirikoestudio.com**.
-Tutto questo serve per non tenere i file dentro il progetto stesso, che creerebbero casini alla ora di fare deploy o eliminare cose.
-### cdn remoto
-il path dei file é dentro la root del sito e, se entrate con il cpanel incontrerete la cartella **cdn.hirikoestudio.com** proprio nella **root**
-### cdn locale
-qui siccome non é scomodo creare un altro dominio etc. La cartella é dentro **public_html**. 
-Peró non vi preoccupate. al momento del deploy la cartella verrá eliminata e non verrá sporcato il **public_html** di produzione

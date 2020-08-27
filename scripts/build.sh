@@ -51,10 +51,6 @@ printf "\n${GREEN} - Launch things for cleaning laravel things:${NC}\n"
 composer dump-autoload --optimize
 php artisan config:cache
 
-printf "\n${GREEN} - Building assets:${NC}\n"
-
-npm run prod
-
 if [ ${releaseType} == "mayor" ] || [ ${releaseType} == "mayor" ]
 then
   printf "\n${GREEN} - Changing app version:${NC}\n"
