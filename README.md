@@ -76,6 +76,6 @@ Tutto il deploy lo fará solo grazie al file che avete in questo progetto chiama
 
 ### Prima volta che fate il deploy a Production?
 Se é la prima volta, allora dovete prima assicurarvi, nella route del progetto, di avere le seguenti cose giá messe a mano:
-* la cartella __/storage__
+* la cartella __/storage__ con tutte le sottocartelle anche!!
 * il file __.env.production__ che avrete rinominato in __.env__
 * ovviamente la BBDD funzionante
