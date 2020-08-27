@@ -60,12 +60,6 @@ prima di lanciarlo assicurarsi di:
 ```
 npm run build
 ```
-> Questo comando lancia solo un build degli assets in modo production (minificato, no sourcemaps, ...)
-
-
-```
-npm run build-minor
-```
 > Questo comando creerá una versione Minor della app e subirá il contenuto automaticamente a master.
 
 ```

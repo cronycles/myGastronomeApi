@@ -2,8 +2,7 @@
     "private": true,
     "scripts": {
         "change-version": "node scripts/changeVersion.js",
-        "build": "./scripts/build.sh",
-        "build-minor": "./scripts/build.sh -m",
+        "build": "./scripts/build.sh -m",
         "build-mayor": "./scripts/build.sh -M"
     },
     "devDependencies": {
