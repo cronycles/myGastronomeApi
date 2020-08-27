@@ -2,7 +2,7 @@
     "name": "cronycles/my_gastronome_api",
     "type": "project",
     "description": "API de la aplicacion de gastronomo",
-    "version": "0.2",
+    "version": "0.3",
     "keywords": [
         "framework",
         "laravel"
