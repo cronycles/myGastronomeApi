@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/crointhe/
+    - export DEPLOYPATH=/home/crointhe/gastronomeapi.crointhemorning.com/
     - export PUBLICFOLDERNAME=public_html
     - export BUILDFOLDERNAME=build
     - cd $BUILDFOLDERNAME
