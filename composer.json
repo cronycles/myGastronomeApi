@@ -1,7 +1,8 @@
 {
-    "name": "laravel/laravel",
+    "name": "cronycles/my_gastronome_api",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "API de la aplicacion de gastronomo",
+    "version": "0.1",
     "keywords": [
         "framework",
         "laravel"
