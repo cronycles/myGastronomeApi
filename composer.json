@@ -1,7 +1,7 @@
 {
     "name": "cronycles/my_gastronome_api",
     "type": "project",
-    "description": "API de la aplicacion de gastronomo",
+    "description": "API della app di gastronomo",
     "version": "1.5",
     "keywords": [
         "framework",
@@ -14,8 +14,8 @@
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^6.3",
         "laravel/framework": "^7.24",
-        "laravel/tinker": "^2.0",
-        "tymon/jwt-auth": "^1.0"
+        "laravel/passport": "^9.3",
+        "laravel/tinker": "^2.0"
     },
     "require-dev": {
         "facade/ignition": "^2.0",

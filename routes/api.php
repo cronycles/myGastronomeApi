@@ -15,21 +15,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::group([
-    'middleware' => 'api',
-], function ($router) {
-    Route::get('about', 'IndexController@index');
-});
-
-Route::group([
-    'middleware' => 'api',
     'prefix' => 'auth'
+], function () {
+    Route::post('login', 'AuthController@login');
+    Route::post('signup', 'AuthController@signup');
 
-], function ($router) {
-
-    Route::post('register', 'JWTAuthController@register');
-    Route::post('login', 'JWTAuthController@login');
-    Route::post('logout', 'JWTAuthController@logout');
-    Route::post('refresh', 'JWTAuthController@refresh');
-    Route::get('profile', 'JWTAuthController@profile');
-
+    Route::group([
+        'middleware' => 'auth:api'
+    ], function() {
+        Route::get('logout', 'AuthController@logout');
+        Route::get('user', 'AuthController@user');
+    });
 });
