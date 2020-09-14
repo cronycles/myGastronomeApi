@@ -37,4 +37,12 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function rating() {
+        return $this->hasMany('App\Rating');
+    }
+
+    public function places() {
+        return $this->hasMany('App\Place');
+    }
 }

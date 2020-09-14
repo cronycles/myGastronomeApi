@@ -11,7 +11,7 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        User::truncate();
+        User::query()->delete();
         User::create([
             'email' => 'admin@admin.com',
             'password' => Hash::make('password'),

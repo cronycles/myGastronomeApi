@@ -96,4 +96,8 @@ class AuthController extends Controller
     {
         return response()->json($request->user());
     }
+
+    public function createPlace(Request $request) {
+        return Place::create($request->all);
+    }
 }
