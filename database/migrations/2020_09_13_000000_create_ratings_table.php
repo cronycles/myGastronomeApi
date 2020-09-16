@@ -15,10 +15,10 @@ class CreateRatingsTable extends Migration
     {
         Schema::create('ratings', function (Blueprint $table) {
             $table->id();
-            $table->integer('location');
-            $table->integer('food');
-            $table->integer('service');
-            $table->integer('value_of_money');
+            $table->integer('location')->nullable();
+            $table->integer('food')->nullable();
+            $table->integer('service')->nullable();
+            $table->integer('value_of_money')->nullable();
             $table->timestamps();
         });
     }

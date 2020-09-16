@@ -43,6 +43,8 @@ class User extends Authenticatable
     }
 
     public function places() {
-        return $this->hasMany('App\Place');
+        return $this->belongsToMany('App\Place')
+            ->withPivot('is_favourite', 'is_want_to_go', 'notes')
+            ->withTimestamps();
     }
 }
