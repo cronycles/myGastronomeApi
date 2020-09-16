@@ -38,6 +38,7 @@ Route::group(
                 Route::get('user', 'AuthController@user');
 
                 Route::post('place/create', 'PlaceController@create');
+                Route::post('place/update', 'PlaceController@update');
             }
         );
     }

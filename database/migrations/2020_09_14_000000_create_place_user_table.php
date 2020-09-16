@@ -22,11 +22,11 @@ class CreatePlaceUserTable extends Migration
             $table->bigInteger('place_id')->unsigned()->index();
             $table->foreign('place_id')->references('id')->on('places')->onDelete('cascade');
 
-            $table->bigInteger('rating_id')->unsigned()->index();
+            $table->bigInteger('rating_id')->nullable()->unsigned()->index();
             $table->foreign('rating_id')->references('id')->on('ratings')->onDelete('cascade');
 
             $table->text('notes')->nullable();
-            $table->boolean('is_favourites')->default(false);
+            $table->boolean('is_favourite')->default(false);
             $table->boolean('is_want_to_go')->default(false);
 
             $table->timestamps();
