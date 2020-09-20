@@ -39,6 +39,7 @@ Route::group(
 
                 Route::post('place/create', 'PlaceController@create');
                 Route::post('place/update', 'PlaceController@update');
+                Route::post('place/review', 'PlaceController@review');
             }
         );
     }

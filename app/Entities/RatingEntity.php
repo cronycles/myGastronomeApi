@@ -4,28 +4,27 @@
 namespace App\Entities;
 
 
-class UserPlaceEntity  extends PlaceEntity {
+class RatingEntity  {
 
     /**
      * @var boolean
      */
-    public $isFavourite;
+    public $location;
 
     /**
      * @var boolean
      */
-    public $isWantToGo;
+    public $service;
 
     /**
      * @var string
      */
-    public $notes;
+    public $food;
 
     /**
-     * @var RatingEntity
+     * @var string
      */
-    public $rating;
-
+    public $valueOfMoney;
 
 
 

@@ -24,7 +24,7 @@ class Place extends Model
 
     public function users() {
         return $this->belongsToMany('App\User')
-            ->withPivot('is_favourite', 'is_want_to_go', 'notes')
+            ->withPivot('is_favourite', 'is_want_to_go', 'rating_id', 'notes')
             ->withTimestamps();
     }
 
